@@ -6,22 +6,23 @@ const USER = sequelize.define("user", {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
+    allowNull: false,
     primaryKey: true,
   },
-  title: Sequelize.STRING,
   UserName: {
     type: Sequelize.STRING,
     allowNull: false,
   },
-  title: Sequelize.STRING,
+
   EmailId: {
     type: Sequelize.STRING,
     allowNull: false,
+    unique: true,
   },
-  title: Sequelize.STRING,
   PhoneNumber: {
     type: Sequelize.INTEGER,
     allowNull: false,
+    unique: true,
   },
 });
 
